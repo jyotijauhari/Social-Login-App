@@ -23,13 +23,13 @@
         />
 
     <Button
+        android:id="@+id/facebook_sign_in_button"
         android:background="#3B5998"
         app:backgroundTint="@null"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:id="@+id/facebook_sign_in_button"
         android:textAllCaps="false"
         android:text="Sign in with Facebook"
         android:textSize="18sp"
