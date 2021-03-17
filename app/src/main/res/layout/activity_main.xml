@@ -1,40 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <Button
         android:id="@+id/google_sign_in_button"
-        app:backgroundTint="@null"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#cf4333"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:textAllCaps="false"
-        android:textSize="18sp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="14dp"
+        android:background="#cf4333"
         android:text="  Sign in with Google  "
+        android:textAllCaps="false"
         android:textColor="#ffffff"
-        />
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/facebook_sign_in_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/facebook_sign_in_button"
-        android:background="#3B5998"
-        app:backgroundTint="@null"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:textAllCaps="false"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="319dp"
+        android:background="#3B5998"
+        android:onClick="movetoFacebookActivity"
         android:text="Sign in with Facebook"
-        android:textSize="18sp"
+        android:textAllCaps="false"
         android:textColor="#ffffff"
-        android:onClick="movetoFacebookActivity"/>
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_sign_in_button" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,7 +42,7 @@ public class FacebookActivity extends AppCompatActivity {
         // Passing MainActivity in Facebook SDK.
         FacebookSdk.sdkInitialize(FacebookActivity.this);
 
-        info = findViewById(R.id.info);
+        //info = findViewById(R.id.info);
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
         profilePhoto = findViewById(R.id.profilePhoto);
@@ -120,11 +120,11 @@ public class FacebookActivity extends AppCompatActivity {
                         try {
 
                             // Adding all user info one by one into TextView.
-                            info.setText("ID: " + jsonObject.getString("id"));
+                            //info.setText("ID: " + jsonObject.getString("id"));
 
-                            name.setText("\nName : " + jsonObject.getString("name"));
+                            name.setText("\nName:" + jsonObject.getString("name"));
 
-                            email.setText("\nEmail : " + jsonObject.getString("email"));
+                            email.setText("Email:" + jsonObject.getString("email"));
 
 
                         }
